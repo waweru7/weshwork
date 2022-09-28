@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/mystyle.css">
+
+</head>
+<body>
+<h1>Login here</h1>
+{% with messages = get_flashed_messages() %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+{% endwith %}
+<form method="post" action="" >
+    <input name="u_name"  placeholder="Enter name" type="name"> <br> <br>
+    <input name="u_email"  placeholder="Enter email" type="email" ><br> <br>
+    <input name="u_pass"  placeholder="Enter password" type="password" ><br> <br>
+     <input value="login" type="submit"><br>
+
+</form>
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-6">
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
